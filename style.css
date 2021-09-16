@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+body{
+    height:100vh;
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.runway{
+    height: 200px;
+    width: 100%;
+    background-image: url(img/road.jpg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.airplane{
+    width: 500px;
+    position: absolute;
+    right: -200px;
+    bottom: 150px;
+    animation: plan 4s linear infinite;
+    transform-origin: 100% 50%;
+}
+@keyframes plan{
+    0%{
+        transform: translate(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translate(-500px)translateY(0px) rotate(0deg);
+    }
+    100%{
+        transform: translate(-1500px)translateY(-200px) rotate(20deg);
+    }
+}
+.planelogo{
+   display: inline-block;
+    padding: 43px 0px;
+    margin: 30px 2px;
+    text-align: center;
+}
+
+.planelogo img{
+    width:7%;
+    border-radius: 29px;
+    filter: invert(1);
+}
+.planelogo div{
+    padding: -22px 13px;
+    margin: -20px 11px;
+    font-size: 21px;
+    color: rgb(30, 148, 142);
+    cursor: pointer;
+}
+.planelogo div:hover{
+    color: rgb(28, 117, 10);
+    text-decoration: underline;
+}
+.booking{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    padding-left: 50%;
+    margin: 23px;
+    font-size: 22px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.booking img{
+    display: inline-block;
+    position: absolute;
+    width: 11%;
+    left: 73%;
+    padding: 34px;
+    margin: -321px;
+    border-radius: 50px;
+}
+.train{
+    display: inline-block;
+    position: absolute;
+    left: 528px;
+    margin: -250px;
+    padding: 8px;
+    color: rgb(30, 148, 142);
+    cursor: pointer;
+}
+.booking a{
+    text-decoration:none;
+}
+.booking a:hover{
+    color: rgb(28, 117, 10);
+    text-decoration: underline;
+}
+.left{
+    display: inline-block;
+    position: absolute;
+    left: 13px;
+    top: 2px;
+    
+    
+}
+.left img{
+    width: 65px;
+    filter:saturate(2);
+    padding-left: 33px;
+    margin: -9px;
+    border-radius: 23px
+}
+.lion{
+    width: 45px;
+    position: absolute;
+    left: 1150px;
+    right: 22%;
+    top: 8%;
+}
+.right{
+    position: absolute;
+    right: 33px;
+    top: -6px;
+    display: inline-block;
+}
+.btn{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 10px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: grey;
+}
+.mid{
+    display: block;
+    width: 33%;
+    margin: 22px auto;
+    padding: 0px;
+    padding-left: 99px;
+}
+.navbar{
+    display: inline-block;
+}
+
+.navbar li{
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+}
+.navbar  a{
+    padding: 37px 17px;
+    text-decoration: none;
+    color: rgb(145, 37, 37);
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    right: -471px;
+    top: -61px;
+
+
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: -15% 73%;
+    padding: 5px;
+    background: rgba(228, 223, 223, 0.188);
+    /*background:white;*/
+    overflow: hidden;
+    border-radius: 30px;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff6112;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btnn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+.social-icons{
+    margin: 30px auto;
+    text-align: center;
+}
+.social-icons img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #ff6112;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input_field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroplane</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="runway">
+            </div>
+            <img src="img/airplane.jpg" class="airplane" alt="">
+        </div>
+        <div class="booking">
+            <img src="img/rail3.jpg" alt="">
+            <a href="https://www.irctc.co.in/nget/train-search" target=_blank class="train">Train</a>
+        </div>
+
+        </div>
+
+        <!--left box for logo-->
+        <div class="left">
+            <img src="img/logo2.webp" alt="">
+            <div>Prakash Transport</div>
+        </div>
+
+        <!--mid box for logo-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/prakash-kumar-gupta-25747021b" target=_blank>About us</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/lion.png" class="lion" alt="">
+        </div>
+        <!--right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="planelogo">
+        <img src="img/plane.png" alt="">
+        <div>Flight</div>
+    </div>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btnn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="img/fb.png" >
+                <img src="img/gp.png" >
+                <img src="img/linkedin.png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input_field" placeholder="User Id" required>
+                <input type="text" class="input_field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Forgot Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input_field" placeholder="User Id" required>
+                <input type="email" class="input_field" placeholder="Email Id" required>
+                <input type="text" class="input_field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById("login");
+        var y=document.getElementById("register");
+        var z=document.getElementById("btnn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+
+</html>
